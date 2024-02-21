@@ -1,0 +1,981 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Test_Automaton_Report.html</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c30588d3e4865eb6c631664381f105493ff8f21e/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Test_Automaton_Report.html</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Nov 4, 2020 10:50:01 am</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">API_Test</a><a class="dropdown-item" href="#">UI_Test</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag="UI_Test"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">addToCartAndPlaceOrder</p>
+            <p class="text-sm"><span>10:50:01 am</span> / <span>30:12:150</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=1</span></div>
+<h5 class="test-status text-pass">addToCartAndPlaceOrder</h5>
+<span class='badge badge-success'>11.04.2020 10:50:01</span>
+<span class='badge badge-danger'>11.04.2020 10:50:13</span>
+<span class='badge badge-default'>30:12:150</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> UI_Test</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:01 am</td>
+        <td>
+          clickElement equals true -> [[ChromeDriver: chrome on MAC (6393f2965a8b03513db2d95c93693480)] -> xpath: //div[a[contains(.,'CATEGORIES')]]/a]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:02 am</td>
+        <td>
+          clickElement equals true -> [[ChromeDriver: chrome on MAC (6393f2965a8b03513db2d95c93693480)] -> xpath: //h4/a[contains(.,'Sony vaio i5')]]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:03 am</td>
+        <td>
+          clickElement equals true -> [[ChromeDriver: chrome on MAC (6393f2965a8b03513db2d95c93693480)] -> xpath: //a[contains(text(),'Add to cart')]]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:05 am</td>
+        <td>
+          acceptAlert equals true -> 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:05 am</td>
+        <td>
+          clickElement equals true -> [[ChromeDriver: chrome on MAC (6393f2965a8b03513db2d95c93693480)] -> xpath: //a[contains(text(),'Home')]]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:05 am</td>
+        <td>
+          clickElement equals true -> [[ChromeDriver: chrome on MAC (6393f2965a8b03513db2d95c93693480)] -> xpath: //div[a[contains(.,'CATEGORIES')]]/a]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:06 am</td>
+        <td>
+          clickElement equals true -> [[ChromeDriver: chrome on MAC (6393f2965a8b03513db2d95c93693480)] -> xpath: //h4/a[contains(.,'Dell i7 8gb')]]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:06 am</td>
+        <td>
+          clickElement equals true -> [[ChromeDriver: chrome on MAC (6393f2965a8b03513db2d95c93693480)] -> xpath: //a[contains(text(),'Add to cart')]]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:07 am</td>
+        <td>
+          acceptAlert equals true -> 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:08 am</td>
+        <td>
+          clickElement equals true -> [[ChromeDriver: chrome on MAC (6393f2965a8b03513db2d95c93693480)] -> xpath: //a[contains(text(),'Cart')]]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:09 am</td>
+        <td>
+          isElementDisplayed equals true -> [[ChromeDriver: chrome on MAC (6393f2965a8b03513db2d95c93693480)] -> xpath: //tbody/tr[td[contains(.,'Dell i7 8gb')]]/td[4]/a]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:09 am</td>
+        <td>
+          clickElement equals true -> [[ChromeDriver: chrome on MAC (6393f2965a8b03513db2d95c93693480)] -> xpath: //tbody/tr[td[contains(.,'Dell i7 8gb')]]/td[4]/a]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:11 am</td>
+        <td>
+          isElementNotDisplayed equals true -> [[ChromeDriver: chrome on MAC (6393f2965a8b03513db2d95c93693480)] -> xpath: //tbody/tr[td[contains(.,'Dell i7 8gb')]]/td[4]/a]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:12 am</td>
+        <td>
+          isElementDisplayed equals true -> [[ChromeDriver: chrome on MAC (6393f2965a8b03513db2d95c93693480)] -> xpath: //tbody/tr[td[contains(.,'Sony vaio i5')]]/td[4]/a]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:12 am</td>
+        <td>
+          clickElement equals true -> [[ChromeDriver: chrome on MAC (6393f2965a8b03513db2d95c93693480)] -> xpath: //button[text()='Place Order']]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:12 am</td>
+        <td>
+          isElementDisplayed equals true -> [[ChromeDriver: chrome on MAC (6393f2965a8b03513db2d95c93693480)] -> xpath: //div[contains(@style,'display: block') and @id='orderModal']]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:12 am</td>
+        <td>
+          enterInput equals true -> [[ChromeDriver: chrome on MAC (6393f2965a8b03513db2d95c93693480)] -> css selector: input#name] testOrder
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:12 am</td>
+        <td>
+          enterInput equals true -> [[ChromeDriver: chrome on MAC (6393f2965a8b03513db2d95c93693480)] -> css selector: input#country] India
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:12 am</td>
+        <td>
+          enterInput equals true -> [[ChromeDriver: chrome on MAC (6393f2965a8b03513db2d95c93693480)] -> css selector: input#city] Noida
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:12 am</td>
+        <td>
+          enterInput equals true -> [[ChromeDriver: chrome on MAC (6393f2965a8b03513db2d95c93693480)] -> css selector: input#card] 1234567812345678
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:13 am</td>
+        <td>
+          enterInput equals true -> [[ChromeDriver: chrome on MAC (6393f2965a8b03513db2d95c93693480)] -> css selector: input#year] 2020
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:13 am</td>
+        <td>
+          enterInput equals true -> [[ChromeDriver: chrome on MAC (6393f2965a8b03513db2d95c93693480)] -> css selector: input#month] November
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:13 am</td>
+        <td>
+          clickElement equals true -> [[ChromeDriver: chrome on MAC (6393f2965a8b03513db2d95c93693480)] -> xpath: //button[contains(.,'Purchase')]]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:13 am</td>
+        <td>
+          clickElement equals true -> [[ChromeDriver: chrome on MAC (6393f2965a8b03513db2d95c93693480)] -> xpath: //button[contains(.,'OK')]]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:13 am</td>
+        <td>
+          Test Case is Passed ----> addToCartAndPlaceOrder
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag="API_Test"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">checkPetStatus</p>
+            <p class="text-sm"><span>10:50:14 am</span> / <span>30:08:704</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=2</span></div>
+<h5 class="test-status text-pass">checkPetStatus</h5>
+<span class='badge badge-success'>11.04.2020 10:50:14</span>
+<span class='badge badge-danger'>11.04.2020 10:50:22</span>
+<span class='badge badge-default'>30:08:704</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> API_Test</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:22 am</td>
+        <td>
+          Assert API is expected to return all pets with available status
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:22 am</td>
+        <td>
+          Test Case is Passed ----> checkPetStatus
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag="API_Test"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">postNewPet</p>
+            <p class="text-sm"><span>10:50:22 am</span> / <span>30:01:673</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=3</span></div>
+<h5 class="test-status text-pass">postNewPet</h5>
+<span class='badge badge-success'>11.04.2020 10:50:22</span>
+<span class='badge badge-danger'>11.04.2020 10:50:24</span>
+<span class='badge badge-default'>30:01:673</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> API_Test</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:24 am</td>
+        <td>
+          {"id":890,"category":{"id":0,"name":"string"},"name":"Jammy","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:24 am</td>
+        <td>
+          Actual:- 200| Expected:- 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:24 am</td>
+        <td>
+          Actual:- 890| Expected:- 890
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:24 am</td>
+        <td>
+          Actual:- Jammy| Expected:- Jammy
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:24 am</td>
+        <td>
+          Test Case is Passed ----> postNewPet
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag="API_Test"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">getAddedNewPet</p>
+            <p class="text-sm"><span>10:50:24 am</span> / <span>30:01:704</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=4</span></div>
+<h5 class="test-status text-pass">getAddedNewPet</h5>
+<span class='badge badge-success'>11.04.2020 10:50:24</span>
+<span class='badge badge-danger'>11.04.2020 10:50:26</span>
+<span class='badge badge-default'>30:01:704</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> API_Test</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:26 am</td>
+        <td>
+          {"id":890,"category":{"id":0,"name":"string"},"name":"Jammy","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:26 am</td>
+        <td>
+          Actual:- 200| Expected:- 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:26 am</td>
+        <td>
+          Actual:- 890| Expected:- 890
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:26 am</td>
+        <td>
+          Test Case is Passed ----> getAddedNewPet
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag="API_Test"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">updateNewPet</p>
+            <p class="text-sm"><span>10:50:26 am</span> / <span>30:01:756</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=5</span></div>
+<h5 class="test-status text-pass">updateNewPet</h5>
+<span class='badge badge-success'>11.04.2020 10:50:26</span>
+<span class='badge badge-danger'>11.04.2020 10:50:28</span>
+<span class='badge badge-default'>30:01:756</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> API_Test</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:28 am</td>
+        <td>
+          {"id":890,"category":{"id":0,"name":"string"},"name":"Jammy","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:28 am</td>
+        <td>
+          Actual:- 200| Expected:- 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:28 am</td>
+        <td>
+          Actual:- 890| Expected:- 890
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:28 am</td>
+        <td>
+          Actual:- sold| Expected:- sold
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:28 am</td>
+        <td>
+          Test Case is Passed ----> updateNewPet
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag="API_Test"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">getUpdatedPetInfo</p>
+            <p class="text-sm"><span>10:50:28 am</span> / <span>30:01:585</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=6</span></div>
+<h5 class="test-status text-pass">getUpdatedPetInfo</h5>
+<span class='badge badge-success'>11.04.2020 10:50:28</span>
+<span class='badge badge-danger'>11.04.2020 10:50:29</span>
+<span class='badge badge-default'>30:01:585</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> API_Test</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:29 am</td>
+        <td>
+          {"id":890,"category":{"id":0,"name":"string"},"name":"Jammy","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:29 am</td>
+        <td>
+          Actual:- 200| Expected:- 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:29 am</td>
+        <td>
+          Actual:- sold| Expected:- sold
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:29 am</td>
+        <td>
+          Test Case is Passed ----> getUpdatedPetInfo
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag="API_Test"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">deletePet</p>
+            <p class="text-sm"><span>10:50:29 am</span> / <span>30:01:623</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=7</span></div>
+<h5 class="test-status text-pass">deletePet</h5>
+<span class='badge badge-success'>11.04.2020 10:50:29</span>
+<span class='badge badge-danger'>11.04.2020 10:50:31</span>
+<span class='badge badge-default'>30:01:623</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> API_Test</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:31 am</td>
+        <td>
+          {"code":200,"type":"unknown","message":"890"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:31 am</td>
+        <td>
+          Actual:- 200| Expected:- 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:31 am</td>
+        <td>
+          Test Case is Passed ----> deletePet
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag="API_Test"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">checkPetAfterDeletion</p>
+            <p class="text-sm"><span>10:50:31 am</span> / <span>30:01:734</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=8</span></div>
+<h5 class="test-status text-pass">checkPetAfterDeletion</h5>
+<span class='badge badge-success'>11.04.2020 10:50:31</span>
+<span class='badge badge-danger'>11.04.2020 10:50:33</span>
+<span class='badge badge-default'>30:01:734</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> API_Test</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:33 am</td>
+        <td>
+          {"code":1,"type":"error","message":"Pet not found"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:33 am</td>
+        <td>
+          Actual:- 404| Expected:- 404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:33 am</td>
+        <td>
+          Actual:- Pet not found| Expected:- Pet not found
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:33 am</td>
+        <td>
+          Test Case is Passed ----> checkPetAfterDeletion
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>7</span>
+</span>
+<p class="name">API_Test</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>API_Test</h4>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:14 am</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>checkPetStatus</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:22 am</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>postNewPet</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:24 am</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>getAddedNewPet</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:26 am</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>updateNewPet</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:28 am</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>getUpdatedPetInfo</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:29 am</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>deletePet</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:31 am</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>checkPetAfterDeletion</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">UI_Test</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UI_Test</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:01 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>addToCartAndPlaceOrder</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Nov 4, 2020 10:50:01 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Nov 4, 2020 10:50:33 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>8</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>8</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='42%'><b>22</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>30</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>API_Test</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>UI_Test</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 8,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 22,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 30
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@5cf22a596531402644b8523470526952516f345f/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
